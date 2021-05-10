@@ -36,7 +36,7 @@ Durante a criação e alteração, os campos *name, description e price* são ob
 
 ### Endpoints
 
-Devem ser disponibilizados os seguintes endpoints para operação do catálogo de produtos:
+O microserviço possui os seguintes endpoints para operação do catálogo de produtos:
 
 
 | Verbo HTTP  |  Resource path    |           Descrição           |
@@ -50,7 +50,7 @@ Devem ser disponibilizados os seguintes endpoints para operação do catálogo d
 
 #### POST /products
 
-Esse endpoint deve criar um novo produto na base de dados, ao receber o JSON do produto o mesmo deverá ser validado em acordo com as regras da seção **Formato**, e, caso esteja vÃ¡lido, persistido na base de dados e retornado com o *id* gerado e HTTP 201.
+Esse endpoint cria um novo produto na base de dados, ao receber o JSON do produto o mesmo deverá ser validado em acordo com as regras da seção **Formato**, e, caso esteja válido, persistido na base de dados e retornado com o *id* gerado e HTTP 201.
 
 Entrada:
 ```javascript
@@ -83,7 +83,7 @@ No campo *status_code* deve vir o código HTTP do erro de validação (400 Bad R
 
 #### PUT /products/\{id\}
 
-Esse endpoint deve atualizar um produto baseado no {id} passado via path param. Antes de alterar, deve ser consultada a base de dados pelo *id*, se o produto NÃO for localizado entÃ£o devolver um HTTP 404 ao cliente. Se localizar o produto, então os campos *name, description e price* devem ser atualizados conforme recebidos no body da requisição.
+Esse endpoint atualiza um produto baseado no {id} passado via path param. Antes de alterar, deve ser consultada a base de dados pelo *id*, se o produto NÃO for localizado então devolver um HTTP 404 ao cliente. Se localizar o produto, então os campos *name, description e price* devem ser atualizados conforme recebidos no body da requisição.
 
 Entrada:
 ```javascript
@@ -197,7 +197,7 @@ Retorno vazio:
 
 #### DELETE /products/\{id\}
 
-Esse endpoint deve deletar um registro de produto na base de dados. Caso encontre o produto filtrando pelo *id* então deve deletar e retornar um HTTP 200. Se o *id* passado não foi localizado deve retornar um HTTP 404
+Esse endpoint deleta um registro de produto na base de dados. Caso encontre o produto filtrando pelo *id* então deve deletar e retornar um HTTP 200. Se o *id* passado não foi localizado deve retornar um HTTP 404
 
 
 
