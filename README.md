@@ -1,11 +1,11 @@
 # Product-MS
 
-Neste microserviço deve ser possível criar, alterar, visualizar e excluir um determinado produto, além de visualizar a lista de produtos atuais dispononíveis. Também é ser possível realizar a busca de produtos filtrando por *name, description e price*.
+Neste microserviço deve é possível criar, alterar, visualizar e excluir um determinado produto, além de visualizar a lista de produtos atuais dispononíveis. Também é ser possível realizar a busca de produtos filtrando por *name, description e price*.
 
 
 ### Pré-requisitos
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+Antes de começar, é preciso ter instalado em sua máquina as seguintes ferramentas:
 Java 11 (Java version: 11.0.11) e Maven (Apache Maven 3.8.1). O código foi editado utilizando o IntelliJ IDEA.
 
 ### 🎲 Rodando o Back End (servidor)
