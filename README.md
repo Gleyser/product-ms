@@ -14,6 +14,7 @@ Java 11 (Java version: 11.0.11) e Maven (Apache Maven 3.8.1). O código foi edit
 - Acesse a pasta do projeto no terminal
 - Entre na pasta target
 - Execute o arquivo jar
+- O servidor roda na http://localhost:9999/
 
 ### Disponível no Heroku
 https://gleyser-product-ms-api.herokuapp.com/
