@@ -18,6 +18,8 @@ Java 11 (Java version: 11.0.11) e Maven (Apache Maven 3.8.1). O código foi edit
 ### Disponível no Heroku
 https://gleyser-product-ms-api.herokuapp.com/
 
+É possível testar no Heroku usando o Postman.
+
 ### Formato das Requisições
 
 O formato esperado de um produto é o seguinte:
