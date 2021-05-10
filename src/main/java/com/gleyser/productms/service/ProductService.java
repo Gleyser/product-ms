@@ -5,9 +5,15 @@ import com.gleyser.productms.entity.Product;
 import com.gleyser.productms.exception.ProductNotFoundException;
 import com.gleyser.productms.mapper.ProductMapper;
 import com.gleyser.productms.repository.ProductRepository;
+import com.gleyser.productms.repository.ProductSpecificationRepository;
+import com.gleyser.productms.Specification.MaxPriceSpecification;
+import com.gleyser.productms.Specification.NameAndDescriptionSpecification;
+import com.gleyser.productms.Specification.MinPriceSpecification;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,10 +22,13 @@ public class ProductService {
 
     private final ProductRepository productRepository;
     private final ProductMapper productMapper = ProductMapper.INSTANCE;
+    private final ProductSpecificationRepository productSpecificationRepository;
 
     @Autowired
-    public ProductService(ProductRepository productRepository) {
+    public ProductService(ProductRepository productRepository, ProductSpecificationRepository productSpecificationRepository) {
+
         this.productRepository = productRepository;
+        this.productSpecificationRepository = productSpecificationRepository;
     }
 
     public ProductDto createProduct(ProductDto productDto){
@@ -54,9 +63,21 @@ public class ProductService {
         return productReturned;
     }
 
+    public List<ProductDto> filteredProducts(String nameAndDescriptionFilter, BigDecimal min_price, BigDecimal max_price){
+        Specification<Product> specification = Specification
+                .where(NameAndDescriptionSpecification.nameAndDescription(nameAndDescriptionFilter))
+                .and(MinPriceSpecification.minPrice(min_price))
+                .and(MaxPriceSpecification.maxPrice(max_price));
+
+        List<Product> products = this.productSpecificationRepository.findAll(specification);
+        return products.stream().map(this.productMapper::toDTO).collect(Collectors.toList());
+
+    }
+
     private Product verifyIfProductExists(Long id) throws ProductNotFoundException {
         return this.productRepository.findById(id).orElseThrow(() -> new ProductNotFoundException(id));
     }
+
 
 
 }

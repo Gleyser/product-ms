@@ -1,9 +1,6 @@
 package com.gleyser.productms.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -14,7 +11,9 @@ import java.math.BigDecimal;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ProductDto {
+@EqualsAndHashCode
+
+public class ProductDto{
 
     private Long id;
 
@@ -27,6 +26,5 @@ public class ProductDto {
     @NotNull(message = "Attention: field price is required.")
     @Positive(message = "Attention: field price must be positive.")
     private BigDecimal price;
-
 
 }
