@@ -1,0 +1,14 @@
+C:\Users\gleys\Documents\GitHub\product-ms\src\main\java\com\gleyser\productms\mapper\ProductMapper.java
+C:\Users\gleys\Documents\GitHub\product-ms\src\main\java\com\gleyser\productms\exception\ProductNotFoundException.java
+C:\Users\gleys\Documents\GitHub\product-ms\src\main\java\com\gleyser\productms\Specification\MaxPriceSpecification.java
+C:\Users\gleys\Documents\GitHub\product-ms\src\main\java\com\gleyser\productms\Specification\NameAndDescriptionSpecification.java
+C:\Users\gleys\Documents\GitHub\product-ms\src\main\java\com\gleyser\productms\controller\ProductController.java
+C:\Users\gleys\Documents\GitHub\product-ms\src\main\java\com\gleyser\productms\entity\Product.java
+C:\Users\gleys\Documents\GitHub\product-ms\src\main\java\com\gleyser\productms\repository\ProductRepository.java
+C:\Users\gleys\Documents\GitHub\product-ms\src\main\java\com\gleyser\productms\repository\ProductSpecificationRepository.java
+C:\Users\gleys\Documents\GitHub\product-ms\src\main\java\com\gleyser\productms\exception\ErrorResponse.java
+C:\Users\gleys\Documents\GitHub\product-ms\src\main\java\com\gleyser\productms\Specification\MinPriceSpecification.java
+C:\Users\gleys\Documents\GitHub\product-ms\src\main\java\com\gleyser\productms\dto\ProductDto.java
+C:\Users\gleys\Documents\GitHub\product-ms\src\main\java\com\gleyser\productms\service\ProductService.java
+C:\Users\gleys\Documents\GitHub\product-ms\src\main\java\com\gleyser\productms\exception\RestExceptionHandler.java
+C:\Users\gleys\Documents\GitHub\product-ms\src\main\java\com\gleyser\productms\ProductMsApplication.java

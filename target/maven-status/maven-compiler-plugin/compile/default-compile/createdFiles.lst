@@ -1,0 +1,17 @@
+com\gleyser\productms\repository\ProductSpecificationRepository.class
+com\gleyser\productms\controller\ProductController.class
+com\gleyser\productms\mapper\ProductMapperImpl.class
+com\gleyser\productms\dto\ProductDto.class
+com\gleyser\productms\entity\Product$ProductBuilder.class
+com\gleyser\productms\exception\RestExceptionHandler.class
+com\gleyser\productms\Specification\MinPriceSpecification.class
+com\gleyser\productms\service\ProductService.class
+com\gleyser\productms\dto\ProductDto$ProductDtoBuilder.class
+com\gleyser\productms\repository\ProductRepository.class
+com\gleyser\productms\Specification\MaxPriceSpecification.class
+com\gleyser\productms\Specification\NameAndDescriptionSpecification.class
+com\gleyser\productms\entity\Product.class
+com\gleyser\productms\exception\ErrorResponse.class
+com\gleyser\productms\exception\ProductNotFoundException.class
+com\gleyser\productms\mapper\ProductMapper.class
+com\gleyser\productms\ProductMsApplication.class
