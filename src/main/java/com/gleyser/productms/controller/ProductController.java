@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.math.BigDecimal;
 import java.util.List;
-import java.util.Set;
 
 @RestController
 @RequestMapping("/products")
@@ -59,11 +58,5 @@ public class ProductController {
         return this.productService.filteredProducts(nameAndDescriptionFilter, min_price, max_price);
 
     }
-
-
-
-
-
-
 
 }
